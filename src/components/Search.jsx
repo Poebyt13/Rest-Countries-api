@@ -10,7 +10,7 @@ function Search({darkMode}) {
         <input type="text" placeholder="Search for a country..." className={darkMode == 1 ? "inputBlack": "input"} />
       </div>
       <div className={darkMode == 1 ? "inputBlack Search__region" : "Search__region input"}>
-        <select name="choise" className={darkMode == 1 ? "choise input inputBlack" : "choise input"}>
+        <select name="choise" className={darkMode == 1 ? "choise input inputBlack" : "choise input"} style={darkMode == 1 ? {backgroundColor: "hsl(209, 23%, 22%)"} : {backgroundColor:"white"}}>
           <option value="5" disabled selected hidden>Filter by Region</option>
           <option value="Africa">Africa</option>
           <option value="Americas">America</option>

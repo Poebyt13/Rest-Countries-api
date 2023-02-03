@@ -12,3 +12,24 @@
         grid-template-rows: repeat(auto-fill, 17.5%);
     }
 }
+
+@media only screen and (max-width: 450px){
+
+    .Countrys{
+        min-height: 80vh;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+        grid-template-rows: repeat(auto-fill, 18rem);
+        grid-auto-rows: 40vh;
+        gap: 3rem;
+
+        .country{
+
+            &__container{
+                width: 77.5%;
+            }
+        }
+    }
+
+}
