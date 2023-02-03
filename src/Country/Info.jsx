@@ -1,9 +1,12 @@
 import { CountryContext } from "../Context/CountryContextProvider";
 import { useContext, useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 
 function Info({darkMode}) {
   const { NameCountry } = useContext(CountryContext);
   const [Paesi, setPaesi] = useState([]);
+
+  const { countryId } = useParams();
 
   const [CountryTarget, setCountryTarget] = useState([]);
   const [img, setImg] = useState("");
@@ -19,7 +22,7 @@ function Info({darkMode}) {
   const [Border, setBorder] = useState([]);
 
   useEffect(() => {
-
+    
     axios
       .get(
         "https://restcountries.com/v3.1/all?fields=name,population,region,subregion,capital,flags,cca3,continents,tld,currencies,languages,borders"
@@ -29,7 +32,7 @@ function Info({darkMode}) {
       });
 
     Paesi.map((PaeseSingolo, index) => {
-      if (PaeseSingolo.name.common == NameCountry) {
+      if (PaeseSingolo.name.common == NameCountry || PaeseSingolo.name.common == countryId) {
         setCountryTarget((CountryTarget[0] = PaeseSingolo));
 
         setImg(CountryTarget[0].flags.svg);

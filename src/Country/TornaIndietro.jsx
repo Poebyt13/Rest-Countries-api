@@ -1,5 +1,7 @@
 
 import React from 'react'
+import arrowLeft from "../assets/arrow-left.svg";
+
 
 function TornaIndietro({darkMode}) {
 
@@ -7,7 +9,7 @@ function TornaIndietro({darkMode}) {
     <div className={darkMode == 1 ? "TornaIndietro TornaIndietroBlack" : "TornaIndietro"}>
       <div className='TornaIndietro__tasto'>
         <a className="EventoTornaIndietro" href="javascript: history.go(-1)">
-          <img src="src\assets\arrow-back-outline.svg" alt="arrow" />
+          <img src={arrowLeft} alt="returnHome" />
           Back
         </a>
       </div>

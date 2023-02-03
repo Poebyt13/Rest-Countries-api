@@ -1,4 +1,5 @@
 
+import moonOutline from "../assets/moon-outline.svg";
 
 function Navbar() {
 
@@ -9,7 +10,7 @@ function Navbar() {
         </div>
         <div className="Navbar__change-background">
             <button className="tasto">
-                <img src="src\assets\moon-outline.svg" alt="moon"/>
+                <img src={moonOutline} alt="moon"/>
                 <p>Dark Mode</p>
             </button>
         </div>

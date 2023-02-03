@@ -1,12 +1,11 @@
-import { createContext } from "react";
-import { useState, useEffect } from "react";
+import { createContext , useState, useEffect} from "react";
 import App from "../App";
 
 export const CountryContext = createContext();
 
 export function CountryContextProvider(props) {
   const [Paesi, setPaesi] = useState([]);
-  const [NameCountry, setNameCountry] = useState("Italy");
+  const [NameCountry, setNameCountry] = useState("");
 
   useEffect(() => {
     axios

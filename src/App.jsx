@@ -75,7 +75,7 @@ function App() {
       <Navbar></Navbar>
       <Routes>
         <Route path="/" element={<Article darkMode={DarkMode} />}></Route>
-        <Route path="/Country" element={<NewCountry darkMode={DarkMode}/>}></Route>
+        <Route path="/Country/:countryId" element={<NewCountry darkMode={DarkMode}/>}></Route>
       </Routes>
     </div>
   );

@@ -57,7 +57,7 @@ function CountryReg({ reg, name, DarkMode }) {
       {Paese.map((ogniPaese, key) => (
         <div className="country" key={key}>
           <NavLink
-            to="/Country"
+            to={"/Country/" + ogniPaese.name.common}
             className="country__container"
             style={
               Dark == 1
