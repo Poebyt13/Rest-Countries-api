@@ -1,0 +1,23 @@
+
+
+//UI SETTINGS.
+
+@import './components/Variables';
+@import './components/Settings';
+
+// COMPONENTS.
+
+@import './components/App';
+@import './components/Navbar';
+@import './components/Search';
+@import './components/Article';
+@import './components/Countrys';
+@import './components/NuovoSito';
+
+
+// SCREENS.
+
+@import './screens/SearchScreen';
+@import './screens/NavbarScreen';
+@import './screens/NuovoSitoScreen';
+@import './screens/CountrysScreen';

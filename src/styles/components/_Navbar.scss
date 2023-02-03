@@ -1,0 +1,48 @@
+
+
+.Navbar{
+    background-color: white;
+    display: flex;
+    min-height: 7vh;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    width: 100%;
+    z-index: 10;
+    transition-duration: .2s;
+
+
+
+    &__titolo{
+        margin-left: 4rem;
+    }
+
+    &__change-background{
+        margin-right: 4rem;
+
+        button{
+            transition-duration: .2s;
+            display: flex;
+            align-items: center;
+            background-color: white;
+            border: none;
+            gap: .5rem;
+            cursor: pointer;
+
+            img{
+                width: 1.2rem;
+            }
+        }
+    }
+}
+
+.NavbarBlack{
+    background-color: $Dark_Mode_Elements;
+    color: white;
+    box-shadow: rgba(44, 44, 44, 0.2) 0px 2px 8px 0px;
+}
+
+.tastoBlack{
+    background-color: $Dark_Mode_Elements !important;
+    color: white;
+}

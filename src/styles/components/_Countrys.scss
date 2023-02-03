@@ -1,0 +1,82 @@
+
+.Countrys{
+    min-height: 80vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(24rem, 1fr));
+    grid-template-rows: repeat(auto-fill, 40vh);
+    grid-auto-rows: 40vh;
+
+    .country{
+
+        justify-content: center;
+        min-height: 19.25rem;
+        height: 17.25rem;
+        display: flex;
+
+        &__container{
+            text-decoration: none;
+            color: black;
+            transition-property: background-color, transform;
+            transition-duration: 150ms;
+            transition-delay: ease;
+            border-radius: 7.5px;
+            background-color: white;
+            width: 19rem;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            overflow: hidden;
+
+            &:hover{
+                transform: scale(1.05, 1.05);
+                cursor: pointer;
+            }
+
+            .country__img{
+                height: 50%;
+                background: white;
+                
+                img{
+                    //width: 19rem;
+                    //height: 8.625rem;
+                    object-fit: cover;
+                    width:100%;
+                    height:100%;
+                }
+                
+            }
+
+            .country__info{
+                height: 50%;
+                padding: 1.5rem;
+                padding-bottom: 0;
+                
+
+                h4{
+                    font-weight: 800;
+                    margin-bottom: .5rem;
+                }
+
+                p{
+                    font-weight: 600;
+                    margin-bottom: .3rem;
+
+                    span{
+                        font-weight: 500;
+                        color: $Dark_Mode_Elements;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.paisesBlack{
+    background-color: $Dark_Mode_Elements !important;
+    color: white !important;
+    box-shadow: rgba(44, 44, 44, 0.2) 0px 2px 8px 0px !important;
+}
+
+.spanBlack{
+    color: white !important;
+}

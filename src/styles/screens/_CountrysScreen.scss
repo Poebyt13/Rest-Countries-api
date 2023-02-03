@@ -1,0 +1,14 @@
+
+@media only screen and (max-height: 900px){
+
+    .Countrys{
+        grid-template-rows: repeat(auto-fill, 15%);
+    }
+
+}
+
+@media only screen and (max-height: 800px){
+    .Countrys{
+        grid-template-rows: repeat(auto-fill, 17.5%);
+    }
+}

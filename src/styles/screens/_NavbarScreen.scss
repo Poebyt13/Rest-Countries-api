@@ -1,0 +1,15 @@
+
+@media only screen and (max-width: 750px){
+    .Navbar{
+
+        &__titolo{
+            font-size: .85rem;
+            margin-left: 1.5rem;
+        }
+
+        &__change-background{
+            margin-right: 1.5rem;
+
+        }
+    }
+}

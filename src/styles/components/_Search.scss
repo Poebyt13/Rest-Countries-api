@@ -1,0 +1,88 @@
+
+.Search{
+    min-height: 13vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    &__text{
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        display: flex;
+        min-height: 2.8rem;
+        margin-left: 4rem;
+        width: 25rem;
+        border-radius: 7.5px;
+        overflow: hidden;
+        transition-duration: .2s;
+ 
+
+        &__img{
+            width: 10%;
+            display: flex;
+            justify-content: center;
+            padding-left: .5rem;
+            padding-right: .5rem;
+            background-color: white;
+
+            img{
+                width: 1.5rem;
+            }
+        }
+
+        input{
+
+            outline: none;
+            display: flex;
+            width: 90%;
+            border: none;
+            font-size: .85rem;
+            padding-top: 2.5px;
+        }
+
+    }
+
+
+
+    &__region{
+        transition-duration: .2s;
+        border-radius: 7.5px;
+        overflow: hidden;
+        width: 11rem;
+        min-height: 2.8rem;
+        margin-right: 4rem;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        background-color: white;
+        padding-right: .5rem;
+
+        .choise{
+            transition-duration: .2s;
+            font-size: .90rem;
+            cursor: pointer;
+            width: 100%;
+            height: 2.8rem;
+            border: none;
+            padding-left: .75rem;
+            outline: none;
+
+
+            option{
+                box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                border: none;
+                outline: none;
+                padding: .5rem 0 .5rem 0;
+            }
+        }
+    }
+
+}
+
+.inputBlack{
+    background-color: $Dark_Mode_Elements;
+    color: white;
+    box-shadow: rgba(44, 44, 44, 0.2) 0px 2px 8px 0px !important;
+
+    &::placeholder{
+        color: white;
+    }
+}
